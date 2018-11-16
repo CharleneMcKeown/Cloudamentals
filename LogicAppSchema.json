@@ -1,0 +1,146 @@
+{
+    "properties": {
+        "count": {
+            "type": "integer"
+        },
+        "value": {
+            "items": {
+                "properties": {
+                    "accessLevel": {
+                        "properties": {
+                            "accountLicenseType": {
+                                "type": "string"
+                            },
+                            "assignmentSource": {
+                                "type": "string"
+                            },
+                            "licenseDisplayName": {
+                                "type": "string"
+                            },
+                            "licensingSource": {
+                                "type": "string"
+                            },
+                            "msdnLicenseType": {
+                                "type": "string"
+                            },
+                            "status": {
+                                "type": "string"
+                            },
+                            "statusMessage": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "extensions": {
+                        "type": "array"
+                    },
+                    "groupAssignments": {
+                        "type": "array"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "lastAccessedDate": {
+                        "type": "string"
+                    },
+                    "projectEntitlements": {
+                        "type": "array"
+                    },
+                    "user": {
+                        "properties": {
+                            "_links": {
+                                "properties": {
+                                    "avatar": {
+                                        "properties": {
+                                            "href": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "membershipState": {
+                                        "properties": {
+                                            "href": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "memberships": {
+                                        "properties": {
+                                            "href": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "self": {
+                                        "properties": {
+                                            "href": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "storageKey": {
+                                        "properties": {
+                                            "href": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "descriptor": {
+                                "type": "string"
+                            },
+                            "displayName": {
+                                "type": "string"
+                            },
+                            "domain": {
+                                "type": "string"
+                            },
+                            "mailAddress": {
+                                "type": "string"
+                            },
+                            "origin": {
+                                "type": "string"
+                            },
+                            "originId": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "principalName": {
+                                "type": "string"
+                            },
+                            "subjectKind": {
+                                "type": "string"
+                            },
+                            "url": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    }
+                },
+                "required": [
+                    "id",
+                    "user",
+                    "accessLevel",
+                    "lastAccessedDate",
+                    "projectEntitlements",
+                    "extensions",
+                    "groupAssignments"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        }
+    },
+    "type": "object"
+}
